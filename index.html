@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Gato</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-3">NINJA GATO</h1>
+
+        <div class="row row-cols-1 gy-1 mt-3 w-25 mx-auto">
+            <img src="Img/cat0.png" data-alt-src="Img/ninja0.png" alt="" class="col ">
+            <img src="Img/cat1.png" data-alt-src="Img/ninja1.png" alt="" class="col ">
+            <img src="Img/cat2.png" data-alt-src="Img/ninja2.png" alt="" class="col ">
+            <img src="Img/cat3.png" data-alt-src="Img/ninja3.png" alt="" class="col ">
+            <img src="Img/cat4.png" data-alt-src="Img/ninja4.png" alt="" class="col ">
+            
+        </div>
+
+        <!-- <h3 id="btn1" class="btn btn-danger mt-4">Restaurar</h3> -->
+
+    </div>
+
+    <script>
+
+       
+
+        $("img").click(function () { 
+            let temp = $(this).attr("src");
+            console.log(temp);
+            $(this).attr("src",$(this).attr("data-alt-src"));
+            $(this).attr("data-alt-src",temp);
+        });
+
+        $("#btn1").click(function () { 
+           
+            
+        });
+
+
+
+    </script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>   
+</body>
+</html>
